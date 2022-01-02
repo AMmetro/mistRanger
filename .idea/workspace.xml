@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="49a3107a-6a91-4ded-be5b-a2155b22c712" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IgnoredFileRootStore">
+    <option name="generatedRoots">
+      <set>
+        <option value="D:\Front\My\mistRanger\clientReact\.idea" />
+      </set>
+    </option>
+  </component>
+  <component name="ProjectId" id="238cB8776H7XGKmsYuUbT6B2xPk" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/bll" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
+    <property name="ts.external.directory.path" value="D:\Front\My\mistRanger\clientReact\node_modules\typescript\lib" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Front\My\mistRanger\clientReact\src\bll" />
+      <recent name="D:\Front\My\mistRanger\clientReact\src\components" />
+      <recent name="D:\Front\My\mistRanger\clientReact\src" />
+    </key>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="49a3107a-6a91-4ded-be5b-a2155b22c712" name="Default Changelist" comment="" />
+      <created>1641119017635</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1641119017635</updated>
+      <workItem from="1641119036356" duration="38000" />
+      <workItem from="1641119081105" duration="32519000" />
+    </task>
+    <task id="LOCAL-00001" summary="add API and request forms">
+      <created>1641160768983</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1641160768984</updated>
+    </task>
+    <task id="LOCAL-00002" summary="add API and request forms">
+      <created>1641160862796</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1641160862796</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="add API and request forms" />
+    <option name="LAST_COMMIT_MESSAGE" value="add API and request forms" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="508" y="46" key="CommitChangelistDialog2" timestamp="1641160861477">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="508" y="46" key="CommitChangelistDialog2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1641160861477" />
+    <state x="690" y="218" key="FileChooserDialogImpl" timestamp="1641119077189">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="690" y="218" key="FileChooserDialogImpl/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1641119077189" />
+    <state x="452" y="188" key="Vcs.Push.Dialog.v2" timestamp="1641160871208">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="452" y="188" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1641160871208" />
+  </component>
+</project>
