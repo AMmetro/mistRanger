@@ -72,16 +72,22 @@ function CurrentUnit() {
             {!isEdit &&
             <div>
                 <article>
-                    <h2>
-                        <a href="/posts/1">Post title</a>
-                    </h2>
+                    <span style={{color: 'lightBlue'}}>
+                        {currentUnit.title}
+                    </span>
+                    <span style={{color: 'lightBlue', paddingLeft: '50px'}}>
+                        {currentUnit.author}
+                    </span>
+
                     <p>{currentUnit.text}</p>
+
                     <div className="info">
-                        <span>{currentUnit.createdAt}</span>
-                        <span>{currentUnit.author}</span>
-                        <button onClick={closeForm}>close</button>
-                        <button onClick={editForm}>edit</button>
+                        <span style={{fontSize: '10px', paddingLeft: '50%'}}>
+                            {currentUnit.createdAt}
+                        </span>
                     </div>
+                    <button onClick={closeForm}>close</button>
+                    <button onClick={editForm}>edit</button>
                 </article>
             </div>
             }
