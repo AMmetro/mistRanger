@@ -1,6 +1,6 @@
 import {API} from "../api";
 import {AppStoreType} from "./store";
-import {setCurrentUnitFormStatusTC} from "./formsStatusReducer";
+import {setAllUnitsFormStatusTC, setCurrentUnitFormStatusTC} from "./formsStatusReducer";
 
 export type UnitReducerType = { id: string, title: string, text: string, date: string, author: string};
 
@@ -39,6 +39,7 @@ export const getUnitsTC = (id:string) => {
         API.getUnit(id)
             .then((res: any) => {
                 dispatch(setUnitAC(res));
+                dispatch(setAllUnitsFormStatusTC(false));
                 dispatch(setCurrentUnitFormStatusTC(true));
             })
             .catch((error: any) => console.log(error.response ? error.response.data.errorText : error.message))

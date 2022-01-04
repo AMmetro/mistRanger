@@ -1,12 +1,13 @@
 import {API} from "../api";
 import {AppStoreType} from "./store";
+import {UnitReducerType} from '../common/types/unitTypes'
+import {setCurrentUnitFormStatusTC} from "./formsStatusReducer";
+import {useDispatch} from 'react-redux'
 
-
-export type UnitReducerType = { id: number, title: string, text: string, date: string, author: string};
 export type UnitReducerStateType = UnitReducerType[];
 
 const initState: UnitReducerStateType = [ {
-    id: 1,
+    _id: '1',
     title: 'Unit',
     text: 'Text describe units',
     date:"xx.yy.zzzz",
@@ -43,6 +44,7 @@ export const setAllUnitsAC = (allUnits: Array<UnitReducerType>): UnitsACType => 
 export const getAllUnitsTC = () => {
     return (dispatch: any, getState: () => AppStoreType) => {
         API.getAllUnits()
+            // .dispatch(setCurrentUnitFormStatusTC(true));
             .then((res: any) => {dispatch(setAllUnitsAC(res))})
             .catch((error: any) => console.log(error.response ? error.response.data.errorText : error.message))
     }

@@ -2,15 +2,11 @@ import React from 'react';
 import {API} from './api/index';
 import {useDispatch, useSelector} from "react-redux";
 import {setNewUnitFormStatusTC} from "./bll/formsStatusReducer";
-import {AppStoreType} from "./bll/store";
 import './App.css';
 
 function AllUnit() {
 
-    const allUnit = useSelector<AppStoreType, any>(state => state.unitReducer)
-
     const dispatch = useDispatch()
-
 
     const titleField = React.useRef(null);
     const authorField = React.useRef(null);
@@ -35,6 +31,7 @@ function AllUnit() {
     }
 
     return (
+             <div style={{margin: '100px 20px 20px 20px'}}>
                 <article>
                     <h2>
                         <a href="/posts/1">add post</a>
@@ -52,6 +49,7 @@ function AllUnit() {
                     <button onClick={saveUnit}>save</button>
                     <button onClick={closeForm}>close</button>
                 </article>
+             </div>
     );
 }
 

@@ -21,7 +21,7 @@ function App() {
     return (
         <>
             <Header/>
-            <AllUnit/>
+            {formsStatus.showAllUnits && <AllUnit/>}
             {formsStatus.showCurrentUnit && <CurrentUnit/>}
             {formsStatus.isAddingNewUnit && <NewUnit/>}
         </>

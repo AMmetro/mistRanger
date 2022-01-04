@@ -1,9 +1,9 @@
 body {
   display: flex;
   min-height: 100vh;
-  align-items: center;
+  /*align-items: center;*/
   justify-content: center;
-  flex-direction: column;
+  /*flex-direction: column;*/
   font-family: 'Roboto', sans-serif;
   font-size: 20px;
   background: linear-gradient(to bottom, #00d2ff, #928dab);
@@ -19,7 +19,7 @@ nav {
   top: 0;
   left: 0;
   right: 0;
-  min-height: 60px;
+  height: 60px;
   display: flex;
   justify-content: flex-end;
   background-color: rgba(0,0,0,0.7);
@@ -31,7 +31,7 @@ nav ul {
 }
 
 nav a {
-  min-height: 60px;
+  height: 20px;
   display: block;
   padding: 10px 20px;
   line-height: 60px;

@@ -47,25 +47,25 @@ function CurrentUnit() {
 
     return (
 
-        <div>
+        <div style={{margin: '100px 20px 20px 20px'}}>
 
             {isEdit &&
             <div>
-                <article>
+
                     <h2>
                         <a href="/posts/1">add post</a>
                     </h2>
                     title
-                    <input ref={titleField} placeholder={currentUnit.title}/>
+                    <textarea ref={titleField}>{currentUnit.title}</textarea>
                     <br/>
                     author
-                    <input ref={authorField} placeholder={currentUnit.author}/>
+                    <textarea ref={authorField}>{currentUnit.author}</textarea>
                     <div className="info">
-                        <textarea ref={descriptionField} placeholder={currentUnit.text}></textarea>
+                        <textarea ref={descriptionField} style={{width: "500px", height: "200px"}}>{currentUnit.text}</textarea>
                     </div>
                     <button onClick={saveUnit}>save</button>
                     <button onClick={closeForm}>close</button>
-                </article>
+
             </div>
             }
 
