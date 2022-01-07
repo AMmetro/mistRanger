@@ -11,21 +11,25 @@ function Search() {
 
     const searchField = React.useRef(null);
 
-    const search = () => {
+    const mySearch = () => {
         //@ts-ignore
         const searchValue = searchField.current.value
-        // console.log(searchValue.toLowerCase())
-        let res = allUnit.find(unit => unit.title.toLowerCase().trim()==searchValue.toLowerCase().trim())
-        if(res !=undefined){
-            console.log(res)
-            dispatch(getUnitsTC(res._id))
-        }
+        // // console.log(searchValue.toLowerCase())
+        // let res = allUnit.find(unit => unit.title.toLowerCase().trim()==searchValue.toLowerCase().trim())
+ 
+        // let res = allUnit.find(unit =>  unit.title.search(searchValue) !== -1 )
+        // console.log(res);
+
+             let res = allUnit.find(unit =>  (unit.title).toLowerCase().indexOf(searchValue.toLowerCase()) !== -1 )
+             if(res !=undefined){
+                dispatch(getUnitsTC(res._id))
+            }
     }
 
     return (
         <div style={{marginTop: '27px', height:'20px'}}>
             <input type='text' placeholder={'search'} ref={searchField}/>
-            <button onClick={search}>ok</button>
+            <button onClick={mySearch}>ok</button>
         </div>
     );
 }

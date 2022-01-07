@@ -18,6 +18,7 @@ function AllUnit() {
         dispatch(getUnitsTC(id))
     }
 
+
     const deletePost = (id: any) => {
         API.deletePost(id)
             .then((res: any) => console.log(res))

@@ -44,8 +44,8 @@ export const setAllUnitsAC = (allUnits: Array<UnitReducerType>): UnitsACType => 
 export const getAllUnitsTC = () => {
     return (dispatch: any, getState: () => AppStoreType) => {
         API.getAllUnits()
-            // .dispatch(setCurrentUnitFormStatusTC(true));
             .then((res: any) => {dispatch(setAllUnitsAC(res))})
+            .then(() => {dispatch(setCurrentUnitFormStatusTC(false))})
             .catch((error: any) => console.log(error.response ? error.response.data.errorText : error.message))
     }
 }

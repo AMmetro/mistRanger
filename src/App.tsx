@@ -14,9 +14,14 @@ function App() {
 
     const formsStatus = useSelector<AppStoreType, any>(state => state.formsStatusReducer)
 
+    function scroll() {
+        console.log('scroll'); 
+    }
+
     useEffect(() => {
         dispatch(getAllUnitsTC())
-    });
+        document.addEventListener('scroll', scroll)
+     },[]);
 
     return (
         <>
