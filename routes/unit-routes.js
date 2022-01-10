@@ -1,7 +1,8 @@
 const express = require('express');
 const router = express.Router();
 const Unit=require('../models/unit')
-const createPath=require('../helpers/create-path')
+const createPath=require('../helpers/create-path');
+const { json } = require('express/lib/response');
 
 router.get('/', (req, res) => {
     res.sendFile(createPath('index'));
@@ -9,6 +10,7 @@ router.get('/', (req, res) => {
   
   router.get('/contacts', (req, res) => {
     res.sendFile(createPath('contacts'));
+    // res.status(200).json({message:'working'})
   });
   
   router.get('/about-us', (req, res) => {
@@ -40,6 +42,7 @@ router.get('/', (req, res) => {
     Unit
     .findByIdAndDelete(req.params.id)
     .then((res)=>{res.sendStatus(200)})
+    // .then((res)=>{res.status(200).json({message:'working'})})
     .catch((error) => {console.log(error)
     res.send(error)
     });
