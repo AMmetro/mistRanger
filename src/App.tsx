@@ -1,36 +1,20 @@
-import React, {useEffect} from 'react';
-import {useDispatch, useSelector} from "react-redux";
-import Header from './components/Header';
-import AllUnit from './AllUnit';
-import NewUnit from './NewUnit';
-import {AppStoreType} from "./bll/store";
-import CurrentUnit from "./components/CurrentUnit";
-import {getAllUnitsTC} from "./bll/unitReducer";
+import React from 'react';
 import './App.css';
 
 
+import Navigation from './components/Navigation/Navigation';
+import Switch from './components/Navigation/Switch';
+
+
 function App() {
-    const dispatch = useDispatch()
+  return (
+    <div className="App">
 
-    const formsStatus = useSelector<AppStoreType, any>(state => state.formsStatusReducer)
+         <Navigation/>
+         <Switch/>
 
-    function scroll() {
-        console.log('scroll'); 
-    }
-
-    useEffect(() => {
-        dispatch(getAllUnitsTC())
-        document.addEventListener('scroll', scroll)
-     },[]);
-
-    return (
-        <>
-            <Header/>
-            {formsStatus.showAllUnits && <AllUnit/>}
-            {formsStatus.showCurrentUnit && <CurrentUnit/>}
-            {formsStatus.isAddingNewUnit && <NewUnit/>}
-        </>
-    );
+    </div>
+  );
 }
 
 export default App;

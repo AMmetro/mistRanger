@@ -26,12 +26,13 @@
 //     },
 // }
 
+const PORT = 3000
 
 
 export const API = {
 
     async getUnit(id:string): Promise<any> {
-        let response = await fetch(`http://localhost:3000/posts/${id}`,
+        let response = await fetch(`http://localhost:${PORT}/units/posts/${id}`,
             {
                 method: 'GET',
                 headers: {},
@@ -40,7 +41,7 @@ export const API = {
     },
 
     async deletePost(id:any): Promise<any> {
-        let response = await fetch(`http://localhost:3000/posts/${id}`,
+        let response = await fetch(`http://localhost:${PORT}/units/posts/${id}`,
             {
                 method: 'DELETE',
                 headers: {},
@@ -49,7 +50,7 @@ export const API = {
     },
 
     async editUnit(updatedUnit: any): Promise<any> {
-        let response = await fetch(`http://localhost:3000/edit/`,
+        let response = await fetch(`http://localhost:${PORT}/units/edit/`,
             {
                 method: 'PUT',
                 headers: { 'Content-Type': 'application/x-www-form-urlencoded;charset=UTF-8'},
@@ -59,7 +60,7 @@ export const API = {
     },
 
     async getAllUnits(): Promise<any> {
-        let response = await fetch('http://localhost:3000/posts',
+        let response = await fetch(`http://localhost:${PORT}/units/posts`,
             {
                 method: 'GET',
                 headers: {},
@@ -69,7 +70,7 @@ export const API = {
 
 
     async addUnit(post:any):Promise<any> {
-        let response = await fetch('http://localhost:3000/add-post/',
+        let response = await fetch(`http://localhost:${PORT}/units/add-post/`,
             {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/x-www-form-urlencoded;charset=UTF-8' },

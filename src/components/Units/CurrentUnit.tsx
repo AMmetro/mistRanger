@@ -1,9 +1,9 @@
 import React, {useState} from "react";
-import {API} from '../api/index';
+import {API} from '../../api/index';
 import {useDispatch, useSelector} from "react-redux";
-import {AppStoreType} from "../bll/store";
-import '../App.css';
-import {setCurrentUnitFormStatusTC} from "../bll/formsStatusReducer";
+import {AppStoreType} from "../../bll/store";
+import '../../App';
+import {setCurrentUnitFormStatusTC} from "../../bll/formsStatusReducer";
 
 function CurrentUnit() {
 

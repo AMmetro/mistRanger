@@ -1,8 +1,8 @@
 import React from 'react';
-import {API} from './api/index';
+import {API} from '../../api/index';
 import {useDispatch, useSelector} from "react-redux";
-import {setNewUnitFormStatusTC} from "./bll/formsStatusReducer";
-import './App.css';
+import {setNewUnitFormStatusTC} from "../../bll/formsStatusReducer";
+import '../../App.css';
 
 function AllUnit() {
 

@@ -1,11 +1,11 @@
 import React, {useEffect} from 'react';
-import {API} from './api/index';
+import {API} from '../../api/index';
 import {useDispatch, useSelector} from "react-redux";
-import {AppStoreType} from "./bll/store";
-import {getUnitsTC} from "./bll/currentUnitReducer";
-import './App.css';
+import {AppStoreType} from "../../bll/store";
+import {getUnitsTC} from "../../bll/currentUnitReducer";
+import '../../App';
 
-import {UnitReducerType} from './common/types/unitTypes'
+import {UnitReducerType} from '../../common/types/unitTypes'
 
 export type UnitReducerStateType = UnitReducerType[];
 
@@ -13,6 +13,9 @@ function AllUnit() {
     const dispatch = useDispatch()
 
     const allUnit = useSelector<AppStoreType, UnitReducerStateType>(state => state.unitReducer)
+
+    console.log(allUnit);
+    
 
     const getUnit = (id: string) => {
         dispatch(getUnitsTC(id))

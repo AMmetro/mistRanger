@@ -73,3 +73,9 @@ td {
 th{
   border: 1px solid black ;
 }
+
+.units_navigation{
+  background-color: green;
+  margin-top: 80px;
+  display: flex;
+}
